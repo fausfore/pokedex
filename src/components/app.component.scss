@@ -1,0 +1,64 @@
+@import '~Styles/variables';
+
+.pkd-app {
+    position: relative;
+    background: #fff;
+    .pkd-header {
+        position: relative;
+        padding: 15px;
+        background: $pkd-red;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+        align-items: center;
+        .pkd-title {
+            left: 0;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            label {
+                font-size: 22px;
+                color: #fff;
+            }
+            .logo-container{
+                width: 45px;
+                height: 100%;
+                margin: 0 10px;
+                img {
+                    width: auto;
+                    max-height: 45px;
+                }
+            }
+        }
+        .goToTeam {
+            padding: 8px 24px;
+            background: #fff;
+            color:#292929;
+            border-radius: 6px;
+            margin: 5px;
+            &:hover {
+                background: rgb(179, 177, 177);
+                color: #fff;
+            }
+        }
+        .pkd-search-container {
+            width: 40%;
+            margin-left: 20px;
+        }
+    }
+    .pkd-main-content {
+        height: calc(100vh - ( 59px + 62px));
+        overflow-y: scroll;
+    }
+    .pkd-footer {
+        background: #292929;
+        width: calc(100% - 50px);
+        padding: 25px;
+        margin-top: 25px;
+        color: #fff;
+        text-align: right;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

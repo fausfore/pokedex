@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": ["es2015", "dom"],
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowJs": true,
+        "jsx": "react",
+        "baseUrl": "./src",
+        "paths": {
+            "@Actions/*": ["store/actions/*"],
+            "@Reducers/*": ["store/reducers/*"],
+            "@Store/*": ["store/*"],
+            "@Mocks/*": ["mocks/*"],
+            "@Models/*": ["models/*"],
+            "@Containers/*": ["containers/*"],
+            "@Components/*": ["components/*"],
+            "@Images/*": ["assets/images/*"]
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.pkd-team {
+    .pkd-list-team {
+        .team-list-item {
+            display: flex;
+            align-self: center;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: solid 1px #777;
+            &:first-child {
+                border-top: solid 1px #777;
+            }
+            .item-sprite{}
+            .item-name{
+                label {
+                    color: #292929;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                }
+            }
+            .remove-pokemon {
+                height: 45px;
+                width: 45px;
+                border-radius: 90px;
+                background: #ff1e1d;
+                border: none;
+                &:hover {
+                    background: #f54242;
+                }
+                i {
+                    font-size: 22px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.centerY {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%); /* IE 9 */
+    -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
+}
+.centerX {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -ms-transform: translateX(-50%); /* IE 9 */
+    -webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+}
+.centerXY {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%); /* IE 9 */
+    -webkit-transform: translateX(-50%) translateY(-50%); /* Chrome, Safari, Opera */
+}

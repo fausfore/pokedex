@@ -1,0 +1,33 @@
+@import '~Styles/variables';
+
+.pkd-search{
+    position: relative;
+    padding-left: 10%;
+    background: #fff;    
+    border-radius: 30px;
+    i {
+        left: 7%;
+        font-size: 18px;
+    }
+    .search-bar {
+        padding: 8px 12px;
+        width: calc(100% - 24px);
+        border: none;
+    }
+    .result-search{
+        top: 110%;
+        width: 90%;
+        max-height: 240px;
+        overflow-y: scroll;
+        background: #fff;
+        z-index: 99;
+        .search-item {
+            padding: 12px 24px;
+            color: #292929;
+            &:hover {
+                color: #fff;
+                background: $pkd-red;
+            }
+        }
+    }
+}

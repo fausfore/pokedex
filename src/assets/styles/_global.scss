@@ -1,0 +1,110 @@
+body  {
+    & > * {
+        font-family: 'Helvetica';
+        font-size: 12px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+button {
+    cursor: pointer;
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed	;
+    }
+    &.btn {
+        padding: 8px 20px;
+        border-radius: 3px;
+        border: none;
+        @extend .shadow;
+        &.primary {
+            background: tomato;
+            color: #fff;
+            &:hover {
+                background:rgb(247, 114, 91);
+            }
+        }
+    }
+}
+
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.23);
+}
+.pk-type-bg {
+    &.normal { background: #a8a877 }
+    &.fire { background: #f08030 }
+    &.fighting { background: #c03129 }
+    &.water { background: #688ff0 }
+    &.flying { background: #a88ff0 }
+    &.grass { background: #77c950 }
+    &.poison { background: #9f40a0 }
+    &.electric { background: #f8d130 }
+    &.ground { background: #e0c068 }
+    &.psychic { background: #f85788 }
+    &.rock { background: #b8a038 }
+    &.ice { background: #98d8d9 }
+    &.bug { background: #a8b921 }
+    &.dragon { background: #7038f8 }
+    &.ghost { background: #6f5798 }
+    &.dark { background: #6f5848 }
+    &.steel { background: #b8b9d0 }
+    &.fairy { background: #ee99ab }
+    &.unknow { background: #679f90 }
+}
+
+
+/* TABLE */
+
+table {
+    &.table {
+        width: 100%; 
+    }
+    & > * {
+        box-model: border-box;
+    }
+    th, td {
+        text-align: left; 
+        padding: 1em;
+    }
+    tr {
+        border-bottom: 1px solid #DDD;
+    }
+    td {
+        .edit-buttons {
+            text-align: right;
+        }
+    }
+    button {
+        border-radius: 3px; 
+        border: none; 
+        margin: 0 0.25em; 
+        transition: all 0.3s;
+        &:hover { 
+            box-shadow: 0 0 4px rgba(3,3,3,0.8); 
+            opacity: 0.9;
+        }
+        &.edit {
+            background: #6F9;
+        }
+        &.delete {
+            background: #F69;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        tr { 
+          display: flex; 
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin: 0.5em 0;
+          border: 1px solid rgba(3,3,3,0.2);
+        }
+        td, th {
+          flex: 1 1 150px;
+          border: 0.5px solid rgba(3,3,3,0.2);
+        }
+    }
+}
+  

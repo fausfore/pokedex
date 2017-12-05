@@ -1,0 +1,8 @@
+.pagination {
+    button {
+        &.active {
+            background: red;
+            color: #fff;
+        }
+    }
+}

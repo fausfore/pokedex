@@ -1,0 +1,66 @@
+.pkd-selected-pokemon {
+    .header-selected {
+        background: #ff1d1c;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .selected-article {
+        height: calc(100% - 62px);
+        margin-bottom: 62px;
+        .selected-title {
+            text-align: center;
+            font-size: 18px;
+            padding: 5px 0;
+            text-transform: capitalize;
+            background: #616161;
+            color: #fff;
+        }
+        .global-infos {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                background: wheat;
+                border-radius: 90px;
+                margin-right: 20px;
+ 
+            }
+            .infos {
+                p {
+                    margin: 10px 0;
+                }
+                .element_type {
+                    padding: 3px 10px;
+                    border-radius: 10px;
+                    color: #fff;
+                    margin-right: 10px;
+                    text-transform: uppercase;
+                }
+                .add_to_team {
+                    position: relative;
+                    i {
+                        left: 110%;
+                        color: gold;
+                        font-size: 22px;
+                    }
+                }
+                
+            }
+            
+            
+        }
+        .table {
+            width: 60%;
+            margin: 0 auto;
+            border: solid 1px #e4e4e4;
+        }
+        
+    }
+}
+.loader-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
